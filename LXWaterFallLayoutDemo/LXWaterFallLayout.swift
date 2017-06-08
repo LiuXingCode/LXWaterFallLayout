@@ -38,6 +38,8 @@ extension LXWaterFallLayout {
         
         let cellW = (collectionView!.bounds.width - sectionInset.left - sectionInset.right - CGFloat((colNums - 1)) * self.minimumInteritemSpacing) / CGFloat(colNums)
         
+        layoutAttributes.removeAll()
+        
         for i in 0..<itemCount {
             let indexPath = IndexPath(item: i, section: 0)
 
